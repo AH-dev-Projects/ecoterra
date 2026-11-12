@@ -1,1 +1,58 @@
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#21382f;background:#f4f7f4;font-synthesis:none}*{box-sizing:border-box}body{margin:0}.topbar{background:#143a2b;color:white;padding:24px max(24px,calc((100vw - 1500px)/2));display:flex;justify-content:space-between;gap:20px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.15em;font-weight:700;color:#b6dec8}h1{font-size:clamp(22px,3vw,31px);margin:5px 0}.topbar p{margin:0;color:#c3d5ca;font-size:14px}.top-actions{display:flex;align-items:center;gap:12px}.tag{padding:7px 11px;background:#285440;border-radius:20px;font-size:12px;white-space:nowrap}.btn{border:0;cursor:pointer;border-radius:8px;padding:11px 13px;font-weight:700;transition:.15s;background:white;color:#194a37}.btn:focus-visible,button:focus-visible,.marker:focus-visible{outline:3px solid #74bcf2;outline-offset:2px}.btn.outline{border:1px solid #bfd0c4;background:transparent;color:inherit}.topbar .btn{border-color:#7da58e;color:white}.btn.primary{background:#166b49;color:white}.btn:hover{filter:brightness(.95)}.full{width:100%;margin-top:9px}main{max-width:1540px;margin:auto;padding:22px 24px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stats article{background:white;border:1px solid #e0e9e1;box-shadow:0 2px 10px #173a2508;border-radius:12px;padding:16px 18px}.stats span{display:block;color:#64776b;font-size:13px}.stats strong{font-size:30px}.progress-section{background:white;border-radius:12px;border:1px solid #e0e9e1;margin:14px 0 18px;padding:15px 18px}.progress-section>div:first-child{display:flex;justify-content:space-between;margin-bottom:10px}.progress{height:11px;background:#e9f0e9;border-radius:12px;overflow:hidden}.progress>div{width:0;height:100%;background:#209466;transition:width .2s}.main-grid{display:grid;grid-template-columns:310px minmax(0,1fr);gap:16px;align-items:start}.sidebar,.map-panel{background:white;border:1px solid #dfe9e0;border-radius:12px;overflow:hidden}.sidebar{padding:18px}.sidebar h2{font-size:17px;margin:2px 0 15px}.sidebar label{display:block;font-weight:650;font-size:12px;margin:14px 0 7px}select,input[type=search],input[type=text],input[type=date],input[type=number],textarea{border:1px solid #c8d8cc;background:white;border-radius:7px;padding:10px;width:100%;font:inherit;color:#1a3527}textarea{resize:vertical;min-height:70px}.legend{display:flex;align-items:center;flex-wrap:wrap;gap:6px;color:#607468;font-size:11px;line-height:2}.dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-left:3px}.pending{background:#df393e}.working{background:#edaa22}.done{background:#169965}.divider{height:1px;background:#e4eae4;margin:19px 0}.selection p,.editor-tools p{font-size:13px;color:#637568;line-height:1.5}.selection .id{font-size:20px;font-weight:800}.selection .status-pill{display:inline-block;font-size:12px;border-radius:12px;padding:4px 8px;background:#fbe7e7;margin:7px 0}.detail{font-size:13px;margin:8px 0}.detail b{color:#354c3b}.map-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #e2e8e2}.map-head small{display:block;color:#6b7e70;margin-top:3px}.zoom-actions{display:flex;gap:5px}.zoom-actions button{border:1px solid #d1ddd3;border-radius:8px;background:#f9fbf9;width:36px;height:34px;font-size:20px;cursor:pointer}.viewport{height:min(66vh,720px);min-height:360px;background:#e9ede9;overflow:hidden;position:relative;touch-action:none;cursor:grab}.viewport.dragging{cursor:grabbing}.map-content{position:absolute;top:0;left:0;transform-origin:0 0;width:1639px;height:959px;user-select:none}.map-content img{display:block;width:100%;height:100%;pointer-events:none}.markers{position:absolute;inset:0;pointer-events:none}.marker{pointer-events:auto;position:absolute;width:15px;height:15px;border:2px solid white;border-radius:50%;box-shadow:0 1px 5px #122d2e91;transform:translate(-50%,-50%);cursor:pointer;padding:0}.marker.pendiente{background:#df393e}.marker.proceso{background:#edaa22}.marker.instalada{background:#159c65}.marker.selected{outline:3px solid #101f17;z-index:2}.marker:hover{z-index:3;scale:1.3}.map-tip{font-size:12px;color:#657b6c;margin:0;padding:10px 16px;border-top:1px solid #e2e8e2}.editor-tools{margin-top:15px}.hidden{display:none!important}.file-label{display:block;border:1px solid #c8d8cc;padding:10px;text-align:center;border-radius:7px;cursor:pointer}#upload{width:100%;font-size:11px;margin:6px 0}.warning{background:#fff0d7;border-radius:8px;padding:10px;color:#7e5313!important}footer{color:#718477;font-size:12px;margin:20px 0 5px;text-align:center}.selection button{margin-top:10px}.form-field{display:block;font-size:12px;font-weight:650;margin:10px 0 5px}.actions{display:flex;gap:8px;margin-top:10px}.danger{color:#b62934!important}.input-note{font-size:11px!important}@media(max-width:800px){.topbar{padding:18px 14px;flex-direction:column;align-items:flex-start}.top-actions{flex-wrap:wrap}main{padding:14px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stats article{padding:12px}.stats strong{font-size:25px}.main-grid{grid-template-columns:1fr}.sidebar{order:2}.map-panel{order:1}.viewport{height:54vh;min-height:300px}.map-head{flex-wrap:wrap}.map-content{will-change:transform}}
+
+/* ===== Pestañas y sección de túmulos ===== */
+.tabs{display:flex;gap:6px;background:#143a2b;padding:0 max(24px,calc((100vw - 1500px)/2));border-top:1px solid #285440}
+.tab-btn{border:0;background:transparent;color:#b6dec8;font:inherit;font-weight:700;font-size:14px;padding:12px 18px;cursor:pointer;border-bottom:3px solid transparent}
+.tab-btn:hover{color:white}
+.tab-btn.active{color:white;border-bottom-color:#74d4a2}
+.tab-btn:focus-visible{outline:3px solid #74bcf2;outline-offset:-3px}
+.t-grid{margin-top:18px}
+.dot.tum{background:#d62828}
+.tum-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.tum line{vector-effect:non-scaling-stroke;stroke-linecap:round}
+.tum .tum-line{stroke:#d62828;stroke-width:5px;pointer-events:none}
+.tum .tum-halo{stroke:#ffffff;stroke-width:9px;opacity:.85;pointer-events:none}
+.tum .tum-hit{stroke:rgba(0,0,0,.001);stroke-width:24px;pointer-events:stroke;cursor:pointer}
+.tum:hover .tum-line{stroke:#ff3b3b}
+.tum.selected .tum-halo{stroke:#101f17;stroke-width:12px;opacity:1}
+.tum:focus{outline:none}
+.tum:focus-visible .tum-halo{stroke:#74bcf2;stroke-width:12px;opacity:1}
+#tViewport.adding{cursor:crosshair}
+#tViewport.editing .tum-hit{cursor:move}
+.tum-pop{position:absolute;z-index:5;pointer-events:none;background:#101f17;color:#fff;font-size:12px;line-height:1.35;padding:6px 9px;border-radius:7px;box-shadow:0 2px 8px #0005;white-space:nowrap;transform:translate(-50%,-100%)}
+.tum-pop b{color:#ffb4b4}
+.chip{display:inline-block;font-size:11px;border-radius:10px;padding:2px 7px;margin-left:6px;vertical-align:1px}
+.chip.warn{background:#fff0d7;color:#7e5313}
+.selection .status-pill.tum-pill{background:#fbe7e7;color:#8f1f26}
+.selection label.form-field{display:block}
+.selection input[type=range]{width:100%;padding:0}
+.file-label.full{margin-top:9px;font-size:14px;font-weight:700;color:#194a37}
+.file-label.full:hover{background:#f4f7f4}
+#tLocalNote{margin-top:12px;font-size:12px}
+#tLocalNote .btn{margin-top:8px;font-size:12px}
+@media(max-width:800px){.tabs{padding:0 14px}.tum-pop{font-size:11px}}
+
+/* ===== Estados de túmulos (mismos colores que las señales de alto) ===== */
+.tum.pendiente .tum-line{stroke:#df393e}
+.tum.proceso .tum-line{stroke:#edaa22}
+.tum.instalado .tum-line{stroke:#159c65}
+.tum.pendiente:hover .tum-line{stroke:#f2575b}
+.tum.proceso:hover .tum-line{stroke:#f6bd48}
+.tum.instalado:hover .tum-line{stroke:#25b57c}
+.selection .status-pill.pill-pendiente{background:#fbe7e7;color:#8f1f26}
+.selection .status-pill.pill-proceso{background:#fdf0d2;color:#8a5a06}
+.selection .status-pill.pill-instalado,.selection .status-pill.pill-instalada{background:#dcf3e8;color:#0f6b46}
+.tum-pop b{color:#fff}
+.admin-only{margin-top:0}
+.admin-only h2{margin-top:0}
+.admin-only .file-label.full,.admin-only .btn.full{font-size:14px}
+#aLocalNote,#tLocalNote{margin-top:12px;font-size:12px}
+#aLocalNote .btn{margin-top:8px;font-size:12px}
+/* ===== Ventana de acceso de administrador ===== */
+.modal{position:fixed;inset:0;background:#0a1d1599;display:flex;align-items:center;justify-content:center;padding:18px;z-index:50}
+.modal-card{background:white;border-radius:14px;padding:22px;max-width:380px;width:100%;box-shadow:0 12px 40px #0006}
+.modal-card h2{margin:0 0 6px;font-size:18px}
+.modal-card p{font-size:13px;color:#637568;line-height:1.5;margin:0 0 12px}
+.modal-card .modal-error{color:#b62934;margin:8px 0 0}
+.modal-card .actions{margin-top:14px}
+.modal-card .btn.outline{border-color:#bfd0c4;color:#194a37}

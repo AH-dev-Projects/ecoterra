@@ -9,10 +9,24 @@
 </head>
 <body>
   <header class="topbar">
-    <div><span class="eyebrow">ECO-TERRA MAQUILISHUAT · CLUSTER I</span><h1>Mapa de señalización vial</h1><p>Seguimiento comunitario de señales de ALTO</p></div>
-    <div class="top-actions"><span id="modeIndicator" class="tag">Consulta pública</span></div>
+    <div><span class="eyebrow">ECO-TERRA MAQUILISHUAT · CLUSTER I</span><h1>Mapa de señalización vial</h1><p>Seguimiento comunitario de señales de ALTO y túmulos</p></div>
+    <div class="top-actions"><span id="modeIndicator" class="tag">Consulta pública</span><button type="button" id="adminBtn" class="btn outline">🔒 Administrador</button></div>
   </header>
-  <main>
+  <div id="adminModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <div class="modal-card">
+      <h2 id="adminTitle">Acceso de administrador</h2>
+      <p>Ingresa el código para poder editar señales de alto y túmulos.</p>
+      <input type="password" id="adminCode" placeholder="Código de acceso" autocomplete="off" aria-label="Código de acceso" />
+      <p id="adminError" class="hidden modal-error" role="alert">Código incorrecto.</p>
+      <div class="actions"><button type="button" id="adminSubmit" class="btn primary">Entrar</button><button type="button" id="adminCancel" class="btn outline">Cancelar</button></div>
+      <p class="input-note">Este código es un filtro contra ediciones casuales. La protección de lo publicado es el permiso de escritura en el repositorio de GitHub.</p>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Secciones del mapa">
+    <button type="button" role="tab" id="tab-alto" class="tab-btn active" aria-selected="true" aria-controls="panel-alto" data-tab="alto">Señales de alto</button>
+    <button type="button" role="tab" id="tab-tumulos" class="tab-btn" aria-selected="false" aria-controls="panel-tumulos" data-tab="tumulos">Túmulos</button>
+  </nav>
+  <main id="panel-alto" role="tabpanel" aria-labelledby="tab-alto">
     <section class="stats" aria-label="Resumen del avance">
       <article><span>Total propuestas</span><strong id="total">—</strong></article>
       <article><span>Pendientes</span><strong id="pending">—</strong></article>
@@ -28,6 +42,15 @@
         <p class="legend"><span class="dot pending"></span> Pendiente <span class="dot working"></span> En proceso <span class="dot done"></span> Instalada</p>
         <div class="divider"></div>
         <div id="selection" class="selection"><h2>Selecciona una señal</h2><p>Toca cualquier marcador en el mapa para consultar su información.</p></div>
+        <div id="aTools" class="editor-tools admin-only hidden">
+          <div class="divider"></div>
+          <h2>Administración de señales</h2>
+          <button type="button" id="aAdd" class="btn outline full">＋ Agregar señal</button>
+          <button type="button" id="aExport" class="btn outline full">Exportar senales.json</button>
+          <label class="file-label full" for="aImport">Importar senales.json</label><input type="file" id="aImport" accept="application/json,.json" class="hidden" />
+          <p class="input-note">Los cambios se guardan solo en este navegador. Para publicarlos para todos, exporta el archivo y reemplaza <b>senales.json</b> en GitHub.</p>
+          <div id="aLocalNote" class="warning hidden"><span>Hay cambios sin publicar guardados en este navegador.</span><button type="button" id="aDiscard" class="btn outline full">Descartar cambios locales</button></div>
+        </div>
       </aside>
       <section class="map-panel" aria-label="Mapa de la residencial">
         <div class="map-head"><div><strong>Plano de la residencial</strong><small>117 ubicaciones iniciales identificadas • 70 polígonos</small></div><div class="zoom-actions"><button id="zoomOut" title="Alejar" aria-label="Alejar">−</button><button id="reset" title="Restablecer vista" aria-label="Restablecer vista">⌖</button><button id="zoomIn" title="Acercar" aria-label="Acercar">+</button></div></div>
@@ -39,6 +62,50 @@
     </section>
     <footer>Proyecto comunitario informativo. Las ubicaciones propuestas y su señalización vial deben validarse técnicamente antes de instalarse. <span id="updateDate"></span></footer>
   </main>
+  <main id="panel-tumulos" class="hidden" role="tabpanel" aria-labelledby="tab-tumulos">
+    <section class="stats" aria-label="Resumen de túmulos">
+      <article><span>Total de túmulos</span><strong id="tTotal">—</strong></article>
+      <article><span>Pendientes</span><strong id="tPending">—</strong></article>
+      <article><span>En proceso</span><strong id="tWorking">—</strong></article>
+      <article><span>Instalados</span><strong id="tDone">—</strong></article>
+    </section>
+    <section class="progress-section"><div><strong>Avance de instalación</strong><span id="tPercentage">0%</span></div><div class="progress"><div id="tProgressFill"></div></div></section>
+    <section class="main-grid">
+      <aside class="sidebar">
+        <h2>Explorar túmulos</h2>
+        <label for="tFilter">Estado</label><select id="tFilter"><option value="todos">Todos los estados</option><option value="pendiente">Pendiente</option><option value="proceso">En proceso</option><option value="instalado">Instalado</option></select>
+        <label for="tData">Datos</label><select id="tData"><option value="todos">Todos</option><option value="sincasa">Sin casa registrada</option><option value="concasa">Con casa registrada</option><option value="porverificar">Polígono por verificar</option></select>
+        <label for="tSearch">Buscar ID, polígono, casa o comentario</label><input type="search" id="tSearch" placeholder="Ej. TUM-012, 35 o 14" />
+        <p class="legend"><span class="dot pending"></span> Pendiente <span class="dot working"></span> En proceso <span class="dot done"></span> Instalado</p>
+        <div class="divider"></div>
+        <div id="tSelection" class="selection"><h2>Selecciona un túmulo</h2><p>Toca cualquier línea en el mapa para ver su estado, polígono y casa.</p></div>
+        <div id="tAdminArea" class="editor-tools admin-only hidden">
+          <div class="divider"></div>
+          <h2>Administración de túmulos</h2>
+          <button type="button" id="tEditToggle" class="btn primary full" aria-pressed="false">Activar modo edición</button>
+          <div id="tEditTools" class="hidden">
+            <button type="button" id="tAdd" class="btn outline full">＋ Agregar túmulo</button>
+            <button type="button" id="tExport" class="btn outline full">Exportar tumulos.json</button>
+            <label class="file-label full" for="tImport">Importar tumulos.json</label><input type="file" id="tImport" accept="application/json,.json" class="hidden" />
+            <p class="input-note">Los cambios se guardan solo en este navegador. Para publicarlos para todos, exporta el archivo y reemplaza <b>tumulos.json</b> en GitHub.</p>
+          </div>
+          <div id="tLocalNote" class="warning hidden"><span>Hay cambios sin publicar guardados en este navegador.</span><button type="button" id="tDiscard" class="btn outline full">Descartar cambios locales</button></div>
+        </div>
+      </aside>
+      <section class="map-panel" aria-label="Mapa de túmulos">
+        <div class="map-head"><div><strong>Plano de la residencial · Túmulos</strong><small id="tCount">—</small></div><div class="zoom-actions"><button id="tZoomOut" type="button" title="Alejar" aria-label="Alejar">−</button><button id="tReset" type="button" title="Restablecer vista" aria-label="Restablecer vista">⌖</button><button id="tZoomIn" type="button" title="Acercar" aria-label="Acercar">+</button></div></div>
+        <div id="tViewport" class="viewport" tabindex="0" aria-label="Mapa interactivo con túmulos">
+          <div id="tMapContent" class="map-content"><img src="assets/mapa-cluster1-limpio.png" draggable="false" alt="Plano de Eco-Terra Maquilishuat, Cluster I, con 70 polígonos"/><svg id="tSvg" class="tum-svg" viewBox="0 0 1639 959"></svg></div>
+          <div id="tPop" class="tum-pop hidden" role="status"></div>
+        </div>
+        <p class="map-tip" id="tTip">Usa la rueda del ratón o los botones para acercar. Arrastra para desplazarte; toca una línea para ver sus detalles.</p>
+      </section>
+    </section>
+    <footer>Los túmulos mostrados son ubicaciones marcadas sobre el plano y deben confirmarse en sitio. El polígono se sugiere según el número más cercano y puede corregirse por el administrador.</footer>
+  </main>
+  <script src="admin-auth.js" defer></script>
+  <script src="altos-admin.js" defer></script>
   <script src="app.js" defer></script>
+  <script src="tumulos.js" defer></script>
 </body>
 </html>

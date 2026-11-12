@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Generar código de administrador · Eco-Terra Maquilishuat</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div style="max-width:520px;margin:50px auto;padding:0 20px;">
+    <div class="sidebar">
+      <h2>Generar código de administrador</h2>
+      <p style="font-size:13.5px;line-height:1.5;color:#637568">
+        Escribe el nuevo código para entrar como administrador. Esta página no envía nada a ningún lado:
+        el cálculo ocurre en tu navegador con la API de criptografía integrada (SHA-256).
+      </p>
+      <label for="code-input">Nuevo código</label>
+      <input type="text" id="code-input" placeholder="Escribe el código que usarás…" autocomplete="off" />
+      <button type="button" class="btn primary full" id="gen-btn">Generar</button>
+
+      <div id="result" class="hidden" style="margin-top:18px;">
+        <p style="font-size:12.5px;color:#637568">Copia esta línea completa y reemplaza la línea <code>const CODE_HASH = ...</code> dentro de <code>admin-auth.js</code>:</p>
+        <textarea id="result-text" readonly style="font-family:monospace;font-size:12px;min-height:84px"></textarea>
+        <button type="button" class="btn outline full" id="copy-btn" style="color:#194a37">Copiar línea</button>
+        <p id="copy-ok" class="hidden" style="font-size:12px;color:#166b49">¡Copiado!</p>
+      </div>
+
+      <p class="warning" style="margin-top:18px;font-size:11.5px">
+        Este código es solo un filtro contra ediciones casuales, no un inicio de sesión real. La protección de lo que se
+        publica sigue siendo quién tiene permiso de escritura en el repositorio de GitHub. Compártelo solo con quien deba editar.
+      </p>
+    </div>
+    <p style="text-align:center;font-size:12px;margin-top:14px"><a href="index.html">← Volver al mapa</a></p>
+  </div>
+
+  <script>
+    async function sha256Hex(text) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+    async function generate() {
+      const val = document.getElementById('code-input').value;
+      if (!val) return;
+      document.getElementById('result-text').value =
+        `  const CODE_HASH = "${await sha256Hex(val)}"; // actualizado ${new Date().toISOString().slice(0, 10)}`;
+      document.getElementById('result').classList.remove('hidden');
+      document.getElementById('copy-ok').classList.add('hidden');
+    }
+    document.getElementById('gen-btn').addEventListener('click', generate);
+    document.getElementById('code-input').addEventListener('keydown', e => { if (e.key === 'Enter') generate(); });
+    document.getElementById('copy-btn').addEventListener('click', () => {
+      const ta = document.getElementById('result-text'); ta.select();
+      navigator.clipboard.writeText(ta.value).then(() => document.getElementById('copy-ok').classList.remove('hidden'));
+    });
+  </script>
+</body>
+</html>
