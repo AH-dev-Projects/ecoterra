@@ -48,11 +48,17 @@
 .admin-only .file-label.full,.admin-only .btn.full{font-size:14px}
 #aLocalNote,#tLocalNote{margin-top:12px;font-size:12px}
 #aLocalNote .btn{margin-top:8px;font-size:12px}
-/* ===== Ventana de acceso de administrador ===== */
-.modal{position:fixed;inset:0;background:#0a1d1599;display:flex;align-items:center;justify-content:center;padding:18px;z-index:50}
-.modal-card{background:white;border-radius:14px;padding:22px;max-width:380px;width:100%;box-shadow:0 12px 40px #0006}
-.modal-card h2{margin:0 0 6px;font-size:18px}
-.modal-card p{font-size:13px;color:#637568;line-height:1.5;margin:0 0 12px}
-.modal-card .modal-error{color:#b62934;margin:8px 0 0}
-.modal-card .actions{margin-top:14px}
-.modal-card .btn.outline{border-color:#bfd0c4;color:#194a37}
+/* ===== Ventana de acceso de administrador (mismo estilo que el panel de torneos) ===== */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:50;background:linear-gradient(135deg,#0b2e1a,#13502c)}
+.modal-card{background:#fff;border-radius:14px;box-shadow:0 14px 40px #0f1e1429;padding:30px 26px;max-width:380px;width:100%;text-align:center}
+.modal-logo{display:block;width:70px;height:70px;margin:0 auto 14px;border-radius:50%;object-fit:cover;background:#fff;box-shadow:0 0 0 1px #e2e8e0}
+.modal-card h2{font-size:18px;margin:0 0 4px}
+.modal-card .note{font-size:12.5px;color:#4a564e;margin:10px 0 18px;line-height:1.5}
+.modal-card input[type=password]{width:100%;margin-bottom:10px;padding:12px 10px;font:inherit;font-size:15px;text-align:center;border:1px solid #e2e8e0;border-radius:9px;background:#fff;color:#0f1a14}
+.modal-card input[type=password]:focus{outline:2px solid #8bd346;outline-offset:1px}
+.modal-card .modal-error{color:#e14b4b;font-size:12.5px;margin:0 0 10px}
+.btn.lime{background:#8bd346;color:#0b2e1a;border-radius:999px;padding:12px 16px;width:100%}
+.btn.lime:hover{background:#5fae27;filter:none}
+.btn.lime:disabled{opacity:.5;cursor:not-allowed}
+.modal-back{display:inline-block;background:none;border:0;color:#4a564e;font:inherit;font-size:12.5px;margin-top:14px;cursor:pointer}
+.modal-back:hover{color:#0f1a14;text-decoration:underline}

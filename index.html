@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#122c24" />
   <title>Señalización vial · Eco-Terra Maquilishuat</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png?v=3" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header class="topbar">
@@ -14,12 +15,13 @@
   </header>
   <div id="adminModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
     <div class="modal-card">
-      <h2 id="adminTitle">Acceso de administrador</h2>
-      <p>Ingresa el código para poder editar señales de alto y túmulos.</p>
+      <img src="assets/logo.png?v=3" alt="Eco-Terra Maquilishuat Cluster I" class="modal-logo" />
+      <h2 id="adminTitle">Acceso administrativo</h2>
+      <p class="note">Ingresa el código de administración para editar señales de alto y túmulos.</p>
       <input type="password" id="adminCode" placeholder="Código de acceso" autocomplete="off" aria-label="Código de acceso" />
       <p id="adminError" class="hidden modal-error" role="alert">Código incorrecto.</p>
-      <div class="actions"><button type="button" id="adminSubmit" class="btn primary">Entrar</button><button type="button" id="adminCancel" class="btn outline">Cancelar</button></div>
-      <p class="input-note">Este código es un filtro contra ediciones casuales. La protección de lo publicado es el permiso de escritura en el repositorio de GitHub.</p>
+      <button type="button" id="adminSubmit" class="btn lime">Entrar</button>
+      <button type="button" id="adminCancel" class="modal-back">← Volver al mapa</button>
     </div>
   </div>
   <nav class="tabs" role="tablist" aria-label="Secciones del mapa">
@@ -103,9 +105,9 @@
     </section>
     <footer>Los túmulos mostrados son ubicaciones marcadas sobre el plano y deben confirmarse en sitio. El polígono se sugiere según el número más cercano y puede corregirse por el administrador.</footer>
   </main>
-  <script src="admin-auth.js" defer></script>
-  <script src="altos-admin.js" defer></script>
-  <script src="app.js" defer></script>
-  <script src="tumulos.js" defer></script>
+  <script src="admin-auth.js?v=3" defer></script>
+  <script src="altos-admin.js?v=3" defer></script>
+  <script src="app.js?v=3" defer></script>
+  <script src="tumulos.js?v=3" defer></script>
 </body>
 </html>
