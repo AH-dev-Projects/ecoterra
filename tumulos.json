@@ -1,19 +1,19 @@
 {
   "version": 1,
   "proyecto": "Eco-Terra Maquilishuat - Cluster I",
-  "actualizado": "2026-11-12",
+  "actualizado": "2026-11-13",
   "tumulos": [
     {
       "id": "TUM-001",
-      "x": 57.9958,
-      "y": 20.7791,
+      "x": 63.8657,
+      "y": 22.2505,
       "angulo": 90,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 18,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "25-26",
       "comentario": ""
     },
     {
@@ -24,23 +24,23 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 69,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 18,
+      "poligonoVerificado": true,
+      "casa": "entrada empalizada",
+      "comentario": "entrada empalizada"
     },
     {
       "id": "TUM-003",
-      "x": 67.5577,
+      "x": 67.9099,
       "y": 20.8321,
       "angulo": 0,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 69,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 68,
+      "poligonoVerificado": true,
+      "casa": "salida empalizada",
+      "comentario": "salida empalizada"
     },
     {
       "id": "TUM-004",
@@ -50,9 +50,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 13,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 11,
+      "poligonoVerificado": true,
+      "casa": "32-33",
       "comentario": ""
     },
     {
@@ -64,22 +64,22 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 11,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "55-56",
       "comentario": ""
     },
     {
       "id": "TUM-006",
-      "x": 28.4978,
+      "x": 28.7773,
       "y": 31.3582,
       "angulo": 90,
       "largo": 24,
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 13,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligonoVerificado": true,
+      "casa": "18-19",
+      "comentario": "ambos lados de la calle"
     },
     {
       "id": "TUM-007",
@@ -89,9 +89,9 @@
       "largo": 24,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 14,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 42,
+      "poligonoVerificado": true,
+      "casa": "1-2",
       "comentario": ""
     },
     {
@@ -103,8 +103,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 70,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "10-11",
       "comentario": ""
     },
     {
@@ -115,9 +115,9 @@
       "largo": 26,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 35,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 10,
+      "poligonoVerificado": true,
+      "casa": "49}8-49",
       "comentario": ""
     },
     {
@@ -129,9 +129,9 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 15,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligonoVerificado": true,
+      "casa": "48-1",
+      "comentario": "frente al pol 15"
     },
     {
       "id": "TUM-011",
@@ -142,8 +142,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 36,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "18-19",
       "comentario": ""
     },
     {
@@ -154,9 +154,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 46,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 44,
+      "poligonoVerificado": true,
+      "casa": "33-34",
       "comentario": ""
     },
     {
@@ -167,9 +167,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 66,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 65,
+      "poligonoVerificado": true,
+      "casa": "13-14",
       "comentario": ""
     },
     {
@@ -180,9 +180,9 @@
       "largo": 26,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 34,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 10,
+      "poligonoVerificado": true,
+      "casa": "32-33",
       "comentario": ""
     },
     {
@@ -194,8 +194,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 27,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "14-15",
       "comentario": ""
     },
     {
@@ -206,9 +206,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 43,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 27,
+      "poligonoVerificado": true,
+      "casa": "1-2",
       "comentario": ""
     },
     {
@@ -220,8 +220,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 47,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "33-34",
       "comentario": ""
     },
     {
@@ -232,9 +232,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 48,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 47,
+      "poligonoVerificado": true,
+      "casa": "19-20",
       "comentario": ""
     },
     {
@@ -246,8 +246,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 61,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "2-3",
       "comentario": ""
     },
     {
@@ -258,10 +258,10 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 66,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 58,
+      "poligonoVerificado": true,
+      "casa": "1",
+      "comentario": "entre casa 1 y área verde"
     },
     {
       "id": "TUM-021",
@@ -271,9 +271,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 63,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 62,
+      "poligonoVerificado": true,
+      "casa": "1-2",
       "comentario": ""
     },
     {
@@ -284,10 +284,10 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 32,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 7,
+      "poligonoVerificado": true,
+      "casa": "11-12",
+      "comentario": "unicamente frente al pol 7"
     },
     {
       "id": "TUM-023",
@@ -297,10 +297,10 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 30,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 7,
+      "poligonoVerificado": true,
+      "casa": "7-8",
+      "comentario": "únicamente frente al área verde"
     },
     {
       "id": "TUM-024",
@@ -310,10 +310,10 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 26,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 5,
+      "poligonoVerificado": true,
+      "casa": "9-10",
+      "comentario": "únicamente frente al pol 5"
     },
     {
       "id": "TUM-025",
@@ -324,35 +324,35 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 26,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "7-8",
       "comentario": ""
     },
     {
       "id": "TUM-026",
-      "x": 59.9963,
-      "y": 62.3957,
+      "x": 62.1486,
+      "y": 62.9976,
       "angulo": 90,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 22,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligonoVerificado": true,
+      "casa": "13",
+      "comentario": "entre casa 13 e inicio de área verde"
     },
     {
       "id": "TUM-027",
-      "x": 59.9963,
-      "y": 64.1586,
+      "x": 60.3094,
+      "y": 64.5599,
       "angulo": 90,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 22,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 3,
+      "poligonoVerificado": true,
+      "casa": "9-10",
+      "comentario": "solo frente al pol 3"
     },
     {
       "id": "TUM-028",
@@ -362,22 +362,22 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 58,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 59,
+      "poligonoVerificado": true,
+      "casa": "11-12",
+      "comentario": "solo frente al polígono 29"
     },
     {
       "id": "TUM-029",
-      "x": 80.37,
-      "y": 65.6001,
+      "x": 80.2918,
+      "y": 65.7339,
       "angulo": 0,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 58,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "26-27",
       "comentario": ""
     },
     {
@@ -389,8 +389,8 @@
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 7,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligonoVerificado": true,
+      "casa": "23-24",
       "comentario": ""
     },
     {
@@ -401,9 +401,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 5,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 6,
+      "poligonoVerificado": true,
+      "casa": "22-23",
       "comentario": ""
     },
     {
@@ -414,9 +414,9 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 3,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 4,
+      "poligonoVerificado": true,
+      "casa": "2-3",
       "comentario": ""
     },
     {
@@ -427,10 +427,10 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 2,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 1,
+      "poligonoVerificado": true,
+      "casa": "Salida principal",
+      "comentario": "Salida principal"
     },
     {
       "id": "TUM-034",
@@ -440,36 +440,36 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 56,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligono": 50,
+      "poligonoVerificado": true,
+      "casa": "Entrada principal",
+      "comentario": "Entrada principal"
     },
     {
       "id": "TUM-035",
-      "x": 76.8079,
-      "y": 74.0946,
+      "x": 77.1992,
+      "y": 74.429,
       "angulo": 90,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 52,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 56,
+      "poligonoVerificado": true,
+      "casa": "35-36",
       "comentario": ""
     },
     {
       "id": "TUM-036",
-      "x": 82.0576,
-      "y": 75.2162,
+      "x": 82.4098,
+      "y": 76.9551,
       "angulo": 0,
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
       "poligono": 55,
-      "poligonoVerificado": false,
-      "casa": "",
-      "comentario": ""
+      "poligonoVerificado": true,
+      "casa": "9",
+      "comentario": "entre casa 9 y área verde"
     },
     {
       "id": "TUM-037",
@@ -479,9 +479,100 @@
       "largo": 18,
       "estado": "pendiente",
       "fechaInstalacion": null,
-      "poligono": 52,
-      "poligonoVerificado": false,
-      "casa": "",
+      "poligono": 50,
+      "poligonoVerificado": true,
+      "casa": "38-39",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-038",
+      "x": 21.04,
+      "y": 24.3428,
+      "angulo": 90,
+      "largo": 15,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 11,
+      "poligonoVerificado": true,
+      "casa": "10-11",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-039",
+      "x": 54.8631,
+      "y": 20.92,
+      "angulo": 90,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 18,
+      "poligonoVerificado": true,
+      "casa": "46-47",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-040",
+      "x": 71.2271,
+      "y": 61.6378,
+      "angulo": 0,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 59,
+      "poligonoVerificado": true,
+      "casa": "30-31",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-041",
+      "x": 69.2705,
+      "y": 39.2449,
+      "angulo": 0,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 61,
+      "poligonoVerificado": true,
+      "casa": "19",
+      "comentario": "entre casa 19 y área verde"
+    },
+    {
+      "id": "TUM-042",
+      "x": 31.3609,
+      "y": 50.5309,
+      "angulo": 90,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 39,
+      "poligonoVerificado": true,
+      "casa": "28-27",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-043",
+      "x": 48.7573,
+      "y": 43.7638,
+      "angulo": 0,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 43,
+      "poligonoVerificado": true,
+      "casa": "13-14",
+      "comentario": ""
+    },
+    {
+      "id": "TUM-044",
+      "x": 41.1965,
+      "y": 43.3765,
+      "angulo": 0,
+      "largo": 20,
+      "estado": "pendiente",
+      "fechaInstalacion": null,
+      "poligono": 42,
+      "poligonoVerificado": true,
+      "casa": "39-40",
       "comentario": ""
     }
   ]
